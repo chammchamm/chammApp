@@ -19,6 +19,11 @@
 		061E4E0B22C1042200307218 /* NetWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061E4E0A22C1042200307218 /* NetWorker.swift */; };
 		061E4E0E22C105B800307218 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061E4E0D22C105B800307218 /* LoginViewController.swift */; };
 		061E4E1022C1073900307218 /* FileWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061E4E0F22C1073900307218 /* FileWorker.swift */; };
+		061E4E4E22C1138500307218 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061E4E4D22C1138500307218 /* MasterViewController.swift */; };
+		061E4E5022C1146500307218 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061E4E4F22C1146500307218 /* DetailViewController.swift */; };
+		061E4E5322C1158000307218 /* NoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061E4E5222C1158000307218 /* NoteViewController.swift */; };
+		061E4E5622C115C000307218 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061E4E5522C115C000307218 /* MapViewController.swift */; };
+		061E4E5822C115D200307218 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061E4E5722C115D200307218 /* WebViewController.swift */; };
 		2AF7A68FE898A5C7C21DCD32 /* Pods_chammAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C3C4C12FDB0C51D42FF7067 /* Pods_chammAppTests.framework */; };
 		77BB5E6A36B20E28C50BD654 /* Pods_chammAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65AF7FBA4C9B2C2B62924740 /* Pods_chammAppUITests.framework */; };
 		D646959F133EAE3E875CA744 /* Pods_chammApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC9E3E7E10F06580C1552A2 /* Pods_chammApp.framework */; };
@@ -60,6 +65,11 @@
 		061E4E0A22C1042200307218 /* NetWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetWorker.swift; sourceTree = "<group>"; };
 		061E4E0D22C105B800307218 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		061E4E0F22C1073900307218 /* FileWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileWorker.swift; sourceTree = "<group>"; };
+		061E4E4D22C1138500307218 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		061E4E4F22C1146500307218 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		061E4E5222C1158000307218 /* NoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteViewController.swift; sourceTree = "<group>"; };
+		061E4E5522C115C000307218 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		061E4E5722C115D200307218 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		1B906F0E8D014CEFB0C9B45D /* Pods-chammAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chammAppUITests.release.xcconfig"; path = "Target Support Files/Pods-chammAppUITests/Pods-chammAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		34AFDCD4483E499D3FD65E68 /* Pods-chammAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chammAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-chammAppUITests/Pods-chammAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		3CC9E3E7E10F06580C1552A2 /* Pods_chammApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_chammApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -124,6 +134,9 @@
 		061E4DD622C0950E00307218 /* chammApp */ = {
 			isa = PBXGroup;
 			children = (
+				061E4E5422C1158E00307218 /* MapFlow */,
+				061E4E5122C1156000307218 /* NoteFlow */,
+				061E4E4B22C1134700307218 /* MasterDetail */,
 				061E4E0C22C1057900307218 /* LoginFlow */,
 				061E4E0522C0A07900307218 /* Worker */,
 				061E4DD722C0950E00307218 /* AppDelegate.swift */,
@@ -171,6 +184,40 @@
 				061E4E0D22C105B800307218 /* LoginViewController.swift */,
 			);
 			path = LoginFlow;
+			sourceTree = "<group>";
+		};
+		061E4E4B22C1134700307218 /* MasterDetail */ = {
+			isa = PBXGroup;
+			children = (
+				061E4E4C22C1135E00307218 /* CellView */,
+			);
+			path = MasterDetail;
+			sourceTree = "<group>";
+		};
+		061E4E4C22C1135E00307218 /* CellView */ = {
+			isa = PBXGroup;
+			children = (
+				061E4E4D22C1138500307218 /* MasterViewController.swift */,
+				061E4E4F22C1146500307218 /* DetailViewController.swift */,
+			);
+			path = CellView;
+			sourceTree = "<group>";
+		};
+		061E4E5122C1156000307218 /* NoteFlow */ = {
+			isa = PBXGroup;
+			children = (
+				061E4E5222C1158000307218 /* NoteViewController.swift */,
+			);
+			path = NoteFlow;
+			sourceTree = "<group>";
+		};
+		061E4E5422C1158E00307218 /* MapFlow */ = {
+			isa = PBXGroup;
+			children = (
+				061E4E5522C115C000307218 /* MapViewController.swift */,
+				061E4E5722C115D200307218 /* WebViewController.swift */,
+			);
+			path = MapFlow;
 			sourceTree = "<group>";
 		};
 		46B7CEB7E628AE4BAF2E8CED /* Pods */ = {
@@ -424,12 +471,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				061E4E5622C115C000307218 /* MapViewController.swift in Sources */,
+				061E4E5022C1146500307218 /* DetailViewController.swift in Sources */,
+				061E4E4E22C1138500307218 /* MasterViewController.swift in Sources */,
 				061E4E0E22C105B800307218 /* LoginViewController.swift in Sources */,
 				061E4E0722C0A10D00307218 /* AsyncRequestWorker.swift in Sources */,
 				061E4DDA22C0950E00307218 /* ViewController.swift in Sources */,
 				061E4E0B22C1042200307218 /* NetWorker.swift in Sources */,
+				061E4E5822C115D200307218 /* WebViewController.swift in Sources */,
 				061E4DD822C0950E00307218 /* AppDelegate.swift in Sources */,
 				061E4E0922C1029900307218 /* SplashViewController.swift in Sources */,
+				061E4E5322C1158000307218 /* NoteViewController.swift in Sources */,
 				061E4E1022C1073900307218 /* FileWorker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

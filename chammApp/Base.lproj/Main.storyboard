@@ -58,7 +58,7 @@
                     <view key="view" contentMode="scaleToFill" id="gsN-D8-wDR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.11664923280477524" green="0.092916853725910187" blue="0.59358078241348267" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="Gm3-G4-k4q"/>
                     </view>
                     <connections>
@@ -69,10 +69,10 @@
             </objects>
             <point key="canvasLocation" x="145" y="-488"/>
         </scene>
-        <!--View Controller-->
+        <!--Master View Controller-->
         <scene sceneID="4go-fL-JcL">
             <objects>
-                <viewController id="DDK-9T-iFd" sceneMemberID="viewController">
+                <viewController id="DDK-9T-iFd" customClass="MasterViewController" customModule="chammApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dBx-dj-V6U">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -81,17 +81,17 @@
                     </view>
                     <navigationItem key="navigationItem" id="bwf-5W-Z85"/>
                     <connections>
-                        <segue destination="mct-83-SBA" kind="show" id="khZ-G4-NvJ"/>
+                        <segue destination="mct-83-SBA" kind="show" identifier="moveToDetailViewSegue" id="khZ-G4-NvJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7xI-SV-SYN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1722" y="-488"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="M4l-5S-uN5">
             <objects>
-                <viewController id="mct-83-SBA" sceneMemberID="viewController">
+                <viewController id="mct-83-SBA" customClass="DetailViewController" customModule="chammApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="osI-Si-ZPI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -99,18 +99,18 @@
                         <viewLayoutGuide key="safeArea" id="2oh-Mm-jh0"/>
                     </view>
                     <connections>
-                        <segue destination="CGV-tl-sei" kind="show" id="Aqd-cG-Pnb"/>
-                        <segue destination="d9b-jf-2hg" kind="show" id="Niv-jY-wcD"/>
+                        <segue destination="CGV-tl-sei" kind="show" identifier="moveToMapViewSegue" id="Aqd-cG-Pnb"/>
+                        <segue destination="d9b-jf-2hg" kind="show" identifier="moveToNoteViewSegue" id="Niv-jY-wcD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Akk-WI-8pO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3476.811594202899" y="-165.40178571428569"/>
+            <point key="canvasLocation" x="2528" y="-488"/>
         </scene>
-        <!--View Controller-->
+        <!--Note View Controller-->
         <scene sceneID="8ze-OI-eGm">
             <objects>
-                <viewController id="d9b-jf-2hg" sceneMemberID="viewController">
+                <viewController id="d9b-jf-2hg" customClass="NoteViewController" customModule="chammApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gce-sB-qEc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -120,12 +120,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fZy-JF-CsF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4394.202898550725" y="134.59821428571428"/>
+            <point key="canvasLocation" x="3380" y="-93"/>
         </scene>
-        <!--View Controller-->
+        <!--Map View Controller-->
         <scene sceneID="NGc-aG-Zt8">
             <objects>
-                <viewController id="CGV-tl-sei" sceneMemberID="viewController">
+                <viewController id="CGV-tl-sei" customClass="MapViewController" customModule="chammApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pyC-Oo-zs8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -133,17 +133,17 @@
                         <viewLayoutGuide key="safeArea" id="N0P-Za-hEH"/>
                     </view>
                     <connections>
-                        <segue destination="k5W-C9-1Uo" kind="show" id="856-nb-Slx"/>
+                        <segue destination="k5W-C9-1Uo" kind="show" identifier="moveToWebViewSegue" id="856-nb-Slx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nBV-qm-hMe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4428.985507246377" y="-642.1875"/>
+            <point key="canvasLocation" x="3381" y="-743"/>
         </scene>
-        <!--View Controller-->
+        <!--Web View Controller-->
         <scene sceneID="uue-oi-Cpx">
             <objects>
-                <viewController id="k5W-C9-1Uo" sceneMemberID="viewController">
+                <viewController id="k5W-C9-1Uo" customClass="WebViewController" customModule="chammApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YPk-6M-Nop">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -153,7 +153,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kqc-1x-Q0h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5402.898550724638" y="-625.44642857142856"/>
+            <point key="canvasLocation" x="4206" y="-743"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="6o8-0E-joX">

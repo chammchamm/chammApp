@@ -19,8 +19,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate, AsyncReponseDe
 //    @IBOutlet weak var btnLogin: UIButton!
 //
 //
-//    var fileWorker : FileWorker?
-//    let storeFileName : String = "store.json"
+   var fileWorker : FileWorker?
+   let storeFileName : String = "store.json"
     
     // MARK: - Views' Event
     
