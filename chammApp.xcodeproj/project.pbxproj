@@ -1,0 +1,770 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		061E4DD822C0950E00307218 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061E4DD722C0950E00307218 /* AppDelegate.swift */; };
+		061E4DDA22C0950E00307218 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061E4DD922C0950E00307218 /* ViewController.swift */; };
+		061E4DDD22C0950E00307218 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 061E4DDB22C0950E00307218 /* Main.storyboard */; };
+		061E4DDF22C0950F00307218 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 061E4DDE22C0950F00307218 /* Assets.xcassets */; };
+		061E4DE222C0950F00307218 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 061E4DE022C0950F00307218 /* LaunchScreen.storyboard */; };
+		061E4DED22C0950F00307218 /* chammAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061E4DEC22C0950F00307218 /* chammAppTests.swift */; };
+		061E4DF822C0950F00307218 /* chammAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061E4DF722C0950F00307218 /* chammAppUITests.swift */; };
+		061E4E0722C0A10D00307218 /* AsyncRequestWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061E4E0622C0A10D00307218 /* AsyncRequestWorker.swift */; };
+		061E4E0922C1029900307218 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061E4E0822C1029900307218 /* SplashViewController.swift */; };
+		061E4E0B22C1042200307218 /* NetWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061E4E0A22C1042200307218 /* NetWorker.swift */; };
+		061E4E0E22C105B800307218 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061E4E0D22C105B800307218 /* LoginViewController.swift */; };
+		061E4E1022C1073900307218 /* FileWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061E4E0F22C1073900307218 /* FileWorker.swift */; };
+		2AF7A68FE898A5C7C21DCD32 /* Pods_chammAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C3C4C12FDB0C51D42FF7067 /* Pods_chammAppTests.framework */; };
+		77BB5E6A36B20E28C50BD654 /* Pods_chammAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65AF7FBA4C9B2C2B62924740 /* Pods_chammAppUITests.framework */; };
+		D646959F133EAE3E875CA744 /* Pods_chammApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC9E3E7E10F06580C1552A2 /* Pods_chammApp.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		061E4DE922C0950F00307218 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 061E4DCC22C0950E00307218 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 061E4DD322C0950E00307218;
+			remoteInfo = chammApp;
+		};
+		061E4DF422C0950F00307218 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 061E4DCC22C0950E00307218 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 061E4DD322C0950E00307218;
+			remoteInfo = chammApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		061E4DD422C0950E00307218 /* chammApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chammApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		061E4DD722C0950E00307218 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		061E4DD922C0950E00307218 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		061E4DDC22C0950E00307218 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		061E4DDE22C0950F00307218 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		061E4DE122C0950F00307218 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		061E4DE322C0950F00307218 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		061E4DE822C0950F00307218 /* chammAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = chammAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		061E4DEC22C0950F00307218 /* chammAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chammAppTests.swift; sourceTree = "<group>"; };
+		061E4DEE22C0950F00307218 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		061E4DF322C0950F00307218 /* chammAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = chammAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		061E4DF722C0950F00307218 /* chammAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chammAppUITests.swift; sourceTree = "<group>"; };
+		061E4DF922C0950F00307218 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		061E4E0622C0A10D00307218 /* AsyncRequestWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncRequestWorker.swift; sourceTree = "<group>"; };
+		061E4E0822C1029900307218 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		061E4E0A22C1042200307218 /* NetWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetWorker.swift; sourceTree = "<group>"; };
+		061E4E0D22C105B800307218 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		061E4E0F22C1073900307218 /* FileWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileWorker.swift; sourceTree = "<group>"; };
+		1B906F0E8D014CEFB0C9B45D /* Pods-chammAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chammAppUITests.release.xcconfig"; path = "Target Support Files/Pods-chammAppUITests/Pods-chammAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		34AFDCD4483E499D3FD65E68 /* Pods-chammAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chammAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-chammAppUITests/Pods-chammAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3CC9E3E7E10F06580C1552A2 /* Pods_chammApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_chammApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4101ECE79D3DE8632522D484 /* Pods-chammAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chammAppTests.debug.xcconfig"; path = "Target Support Files/Pods-chammAppTests/Pods-chammAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		65AF7FBA4C9B2C2B62924740 /* Pods_chammAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_chammAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C3C4C12FDB0C51D42FF7067 /* Pods_chammAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_chammAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8C6B24FCA6DB7CFA687A915 /* Pods-chammApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chammApp.release.xcconfig"; path = "Target Support Files/Pods-chammApp/Pods-chammApp.release.xcconfig"; sourceTree = "<group>"; };
+		CB4FCF9C2B3F08EAE38D9E3B /* Pods-chammAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chammAppTests.release.xcconfig"; path = "Target Support Files/Pods-chammAppTests/Pods-chammAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		E5E19586204F9EC6AC75A3B7 /* Pods-chammApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chammApp.debug.xcconfig"; path = "Target Support Files/Pods-chammApp/Pods-chammApp.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		061E4DD122C0950E00307218 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D646959F133EAE3E875CA744 /* Pods_chammApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		061E4DE522C0950F00307218 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AF7A68FE898A5C7C21DCD32 /* Pods_chammAppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		061E4DF022C0950F00307218 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77BB5E6A36B20E28C50BD654 /* Pods_chammAppUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		061E4DCB22C0950E00307218 = {
+			isa = PBXGroup;
+			children = (
+				061E4DD622C0950E00307218 /* chammApp */,
+				061E4DEB22C0950F00307218 /* chammAppTests */,
+				061E4DF622C0950F00307218 /* chammAppUITests */,
+				061E4DD522C0950E00307218 /* Products */,
+				46B7CEB7E628AE4BAF2E8CED /* Pods */,
+				5337121E936E3FEFEB46DB4A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		061E4DD522C0950E00307218 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				061E4DD422C0950E00307218 /* chammApp.app */,
+				061E4DE822C0950F00307218 /* chammAppTests.xctest */,
+				061E4DF322C0950F00307218 /* chammAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		061E4DD622C0950E00307218 /* chammApp */ = {
+			isa = PBXGroup;
+			children = (
+				061E4E0C22C1057900307218 /* LoginFlow */,
+				061E4E0522C0A07900307218 /* Worker */,
+				061E4DD722C0950E00307218 /* AppDelegate.swift */,
+				061E4DD922C0950E00307218 /* ViewController.swift */,
+				061E4DDB22C0950E00307218 /* Main.storyboard */,
+				061E4DDE22C0950F00307218 /* Assets.xcassets */,
+				061E4DE022C0950F00307218 /* LaunchScreen.storyboard */,
+				061E4DE322C0950F00307218 /* Info.plist */,
+				061E4E0822C1029900307218 /* SplashViewController.swift */,
+			);
+			path = chammApp;
+			sourceTree = "<group>";
+		};
+		061E4DEB22C0950F00307218 /* chammAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				061E4DEC22C0950F00307218 /* chammAppTests.swift */,
+				061E4DEE22C0950F00307218 /* Info.plist */,
+			);
+			path = chammAppTests;
+			sourceTree = "<group>";
+		};
+		061E4DF622C0950F00307218 /* chammAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				061E4DF722C0950F00307218 /* chammAppUITests.swift */,
+				061E4DF922C0950F00307218 /* Info.plist */,
+			);
+			path = chammAppUITests;
+			sourceTree = "<group>";
+		};
+		061E4E0522C0A07900307218 /* Worker */ = {
+			isa = PBXGroup;
+			children = (
+				061E4E0F22C1073900307218 /* FileWorker.swift */,
+				061E4E0A22C1042200307218 /* NetWorker.swift */,
+				061E4E0622C0A10D00307218 /* AsyncRequestWorker.swift */,
+			);
+			path = Worker;
+			sourceTree = "<group>";
+		};
+		061E4E0C22C1057900307218 /* LoginFlow */ = {
+			isa = PBXGroup;
+			children = (
+				061E4E0D22C105B800307218 /* LoginViewController.swift */,
+			);
+			path = LoginFlow;
+			sourceTree = "<group>";
+		};
+		46B7CEB7E628AE4BAF2E8CED /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E5E19586204F9EC6AC75A3B7 /* Pods-chammApp.debug.xcconfig */,
+				C8C6B24FCA6DB7CFA687A915 /* Pods-chammApp.release.xcconfig */,
+				4101ECE79D3DE8632522D484 /* Pods-chammAppTests.debug.xcconfig */,
+				CB4FCF9C2B3F08EAE38D9E3B /* Pods-chammAppTests.release.xcconfig */,
+				34AFDCD4483E499D3FD65E68 /* Pods-chammAppUITests.debug.xcconfig */,
+				1B906F0E8D014CEFB0C9B45D /* Pods-chammAppUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5337121E936E3FEFEB46DB4A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3CC9E3E7E10F06580C1552A2 /* Pods_chammApp.framework */,
+				6C3C4C12FDB0C51D42FF7067 /* Pods_chammAppTests.framework */,
+				65AF7FBA4C9B2C2B62924740 /* Pods_chammAppUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		061E4DD322C0950E00307218 /* chammApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 061E4DFC22C0950F00307218 /* Build configuration list for PBXNativeTarget "chammApp" */;
+			buildPhases = (
+				A2FE5494AEFD0AA4F7C96283 /* [CP] Check Pods Manifest.lock */,
+				061E4DD022C0950E00307218 /* Sources */,
+				061E4DD122C0950E00307218 /* Frameworks */,
+				061E4DD222C0950E00307218 /* Resources */,
+				D46789735E76592DE3DAF22F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = chammApp;
+			productName = chammApp;
+			productReference = 061E4DD422C0950E00307218 /* chammApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		061E4DE722C0950F00307218 /* chammAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 061E4DFF22C0950F00307218 /* Build configuration list for PBXNativeTarget "chammAppTests" */;
+			buildPhases = (
+				42D4FCD91038818ED760FC8E /* [CP] Check Pods Manifest.lock */,
+				061E4DE422C0950F00307218 /* Sources */,
+				061E4DE522C0950F00307218 /* Frameworks */,
+				061E4DE622C0950F00307218 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				061E4DEA22C0950F00307218 /* PBXTargetDependency */,
+			);
+			name = chammAppTests;
+			productName = chammAppTests;
+			productReference = 061E4DE822C0950F00307218 /* chammAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		061E4DF222C0950F00307218 /* chammAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 061E4E0222C0950F00307218 /* Build configuration list for PBXNativeTarget "chammAppUITests" */;
+			buildPhases = (
+				A12FA58F8C1CD1C037695804 /* [CP] Check Pods Manifest.lock */,
+				061E4DEF22C0950F00307218 /* Sources */,
+				061E4DF022C0950F00307218 /* Frameworks */,
+				061E4DF122C0950F00307218 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				061E4DF522C0950F00307218 /* PBXTargetDependency */,
+			);
+			name = chammAppUITests;
+			productName = chammAppUITests;
+			productReference = 061E4DF322C0950F00307218 /* chammAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		061E4DCC22C0950E00307218 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Jennifer Lin";
+				TargetAttributes = {
+					061E4DD322C0950E00307218 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					061E4DE722C0950F00307218 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 061E4DD322C0950E00307218;
+					};
+					061E4DF222C0950F00307218 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 061E4DD322C0950E00307218;
+					};
+				};
+			};
+			buildConfigurationList = 061E4DCF22C0950E00307218 /* Build configuration list for PBXProject "chammApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 061E4DCB22C0950E00307218;
+			productRefGroup = 061E4DD522C0950E00307218 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				061E4DD322C0950E00307218 /* chammApp */,
+				061E4DE722C0950F00307218 /* chammAppTests */,
+				061E4DF222C0950F00307218 /* chammAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		061E4DD222C0950E00307218 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				061E4DE222C0950F00307218 /* LaunchScreen.storyboard in Resources */,
+				061E4DDF22C0950F00307218 /* Assets.xcassets in Resources */,
+				061E4DDD22C0950E00307218 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		061E4DE622C0950F00307218 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		061E4DF122C0950F00307218 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		42D4FCD91038818ED760FC8E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-chammAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A12FA58F8C1CD1C037695804 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-chammAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A2FE5494AEFD0AA4F7C96283 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-chammApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D46789735E76592DE3DAF22F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-chammApp/Pods-chammApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SQLite.swift/SQLite.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SQLite.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-chammApp/Pods-chammApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		061E4DD022C0950E00307218 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				061E4E0E22C105B800307218 /* LoginViewController.swift in Sources */,
+				061E4E0722C0A10D00307218 /* AsyncRequestWorker.swift in Sources */,
+				061E4DDA22C0950E00307218 /* ViewController.swift in Sources */,
+				061E4E0B22C1042200307218 /* NetWorker.swift in Sources */,
+				061E4DD822C0950E00307218 /* AppDelegate.swift in Sources */,
+				061E4E0922C1029900307218 /* SplashViewController.swift in Sources */,
+				061E4E1022C1073900307218 /* FileWorker.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		061E4DE422C0950F00307218 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				061E4DED22C0950F00307218 /* chammAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		061E4DEF22C0950F00307218 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				061E4DF822C0950F00307218 /* chammAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		061E4DEA22C0950F00307218 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 061E4DD322C0950E00307218 /* chammApp */;
+			targetProxy = 061E4DE922C0950F00307218 /* PBXContainerItemProxy */;
+		};
+		061E4DF522C0950F00307218 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 061E4DD322C0950E00307218 /* chammApp */;
+			targetProxy = 061E4DF422C0950F00307218 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		061E4DDB22C0950E00307218 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				061E4DDC22C0950E00307218 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		061E4DE022C0950F00307218 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				061E4DE122C0950F00307218 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		061E4DFA22C0950F00307218 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		061E4DFB22C0950F00307218 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		061E4DFD22C0950F00307218 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5E19586204F9EC6AC75A3B7 /* Pods-chammApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L96G5KY244;
+				INFOPLIST_FILE = chammApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tw.edu.cjcu.chammApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		061E4DFE22C0950F00307218 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8C6B24FCA6DB7CFA687A915 /* Pods-chammApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L96G5KY244;
+				INFOPLIST_FILE = chammApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tw.edu.cjcu.chammApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		061E4E0022C0950F00307218 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4101ECE79D3DE8632522D484 /* Pods-chammAppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L96G5KY244;
+				INFOPLIST_FILE = chammAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.cjcu.chammAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/chammApp.app/chammApp";
+			};
+			name = Debug;
+		};
+		061E4E0122C0950F00307218 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB4FCF9C2B3F08EAE38D9E3B /* Pods-chammAppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L96G5KY244;
+				INFOPLIST_FILE = chammAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.cjcu.chammAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/chammApp.app/chammApp";
+			};
+			name = Release;
+		};
+		061E4E0322C0950F00307218 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34AFDCD4483E499D3FD65E68 /* Pods-chammAppUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L96G5KY244;
+				INFOPLIST_FILE = chammAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.cjcu.chammAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = chammApp;
+			};
+			name = Debug;
+		};
+		061E4E0422C0950F00307218 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B906F0E8D014CEFB0C9B45D /* Pods-chammAppUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L96G5KY244;
+				INFOPLIST_FILE = chammAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.cjcu.chammAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = chammApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		061E4DCF22C0950E00307218 /* Build configuration list for PBXProject "chammApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				061E4DFA22C0950F00307218 /* Debug */,
+				061E4DFB22C0950F00307218 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		061E4DFC22C0950F00307218 /* Build configuration list for PBXNativeTarget "chammApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				061E4DFD22C0950F00307218 /* Debug */,
+				061E4DFE22C0950F00307218 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		061E4DFF22C0950F00307218 /* Build configuration list for PBXNativeTarget "chammAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				061E4E0022C0950F00307218 /* Debug */,
+				061E4E0122C0950F00307218 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		061E4E0222C0950F00307218 /* Build configuration list for PBXNativeTarget "chammAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				061E4E0322C0950F00307218 /* Debug */,
+				061E4E0422C0950F00307218 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 061E4DCC22C0950E00307218 /* Project object */;
+}
