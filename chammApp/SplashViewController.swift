@@ -20,7 +20,7 @@ class SplashViewController: UIViewController, AsyncReponseDelegate {
    
         appVersion = "" + (Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String)!
         
-        lbVersion.text = appVersion
+ //       lbVersion.text = appVersion
         
         //
         AppDelegate.RequestWorker.reponseDelegate = self

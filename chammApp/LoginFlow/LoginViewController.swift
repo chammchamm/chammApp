@@ -128,25 +128,25 @@ class LoginViewController: UIViewController, UITextFieldDelegate, AsyncReponseDe
         return true
     }
 
+    @IBAction func btnLoginClicked(_ sender: Any) {
+            let account = txtAccount.text!
+            let password = txtPassword.text!
+        
+            let from = "https://score.azurewebsites.net/api/login/\( account )/\( password )"
+    
 
-    // MARK: - AsyncResponseDelegate
-    
-    
-//    @IBAction func btnLoginClicked(_ sender: Any) {
-//
-//        let account = txtAccount.text!
-//        let password = txtPassword.text!
-//
-//        let from = "https://score.azurewebsites.net/api/login/\( account )/\( password )"
-//
-//        AppDelegate.RequestWorker.getResponse(from: from, tag: 1)
-//
-//        DispatchQueue.main.async {
-//            self.btnLogin.isEnabled = false
-//        }
-//
-//    }
-//
+
+// MARK: - AsyncResponseDelegate
+
+ AppDelegate.RequestWorker.getResponse(from: from, tag: 1)
+
+        DispatchQueue.main.async {
+            self.btnLogin.isEnabled = false
+        }
+
+    }
+
+
     func readServiceCategory()  {
         let from = "https://score.azurewebsites.net/api/ServiceCategory"
 
