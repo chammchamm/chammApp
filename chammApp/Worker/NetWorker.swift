@@ -1,9 +1,9 @@
 //
 //  NetWorker.swift
-//  LeisureMap
+//  chammApp
 //
-//  Created by stu1 on 2018/7/26.
-//  Copyright © 2018年 tripim. All rights reserved.
+//  Created by Jennifer Lin on 2019/6/24.
+//
 //
 
 import Foundation

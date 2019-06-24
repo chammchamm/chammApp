@@ -8,8 +8,6 @@
 
 import UIKit
 
-import UIKit
-
 class SplashViewController: UIViewController, AsyncReponseDelegate {
     
     var appVersion : String = ""
@@ -19,11 +17,7 @@ class SplashViewController: UIViewController, AsyncReponseDelegate {
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        
-        
-        
-        
-        //
+   
         appVersion = "" + (Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String)!
         
         lbVersion.text = appVersion
@@ -69,14 +63,4 @@ class SplashViewController: UIViewController, AsyncReponseDelegate {
 }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
-}
+  
