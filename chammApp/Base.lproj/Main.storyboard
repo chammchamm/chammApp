@@ -99,8 +99,8 @@
                     </view>
                     <connections>
                         <outlet property="btnLogin" destination="B9b-4r-Utt" id="y4q-9G-QIy"/>
+                        <outlet property="txtAccount" destination="BdM-NJ-7UC" id="Yk2-gO-OfH"/>
                         <outlet property="txtPassword" destination="aNC-DW-fSh" id="WCc-DR-TDA"/>
-                        <outlet property="txtTextField" destination="BdM-NJ-7UC" id="HCo-vn-nOs"/>
                         <segue destination="ckf-FO-uYj" kind="show" identifier="moveToMasterViewSegue" id="7N9-4B-ACH"/>
                     </connections>
                 </viewController>

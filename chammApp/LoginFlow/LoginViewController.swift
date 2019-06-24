@@ -11,8 +11,8 @@ import SwiftyJSON
 
 class LoginViewController: UIViewController, UITextFieldDelegate, AsyncReponseDelegate, FileWorkerDelegate {
     
-    @IBOutlet weak var txtAccount: UITextField!
     
+    @IBOutlet weak var txtAccount: UITextField!
     @IBOutlet weak var txtPassword: UITextField!
 
     @IBOutlet weak var btnLogin: UIButton!
@@ -133,12 +133,9 @@ class LoginViewController: UIViewController, UITextFieldDelegate, AsyncReponseDe
             let password = txtPassword.text!
         
             let from = "https://score.azurewebsites.net/api/login/\( account )/\( password )"
-    
 
-
-// MARK: - AsyncResponseDelegate
-
- AppDelegate.RequestWorker.getResponse(from: from, tag: 1)
+        // MARK: - AsyncResponseDelegate
+        AppDelegate.RequestWorker.getResponse(from: from, tag: 1)
 
         DispatchQueue.main.async {
             self.btnLogin.isEnabled = false
@@ -204,20 +201,12 @@ class LoginViewController: UIViewController, UITextFieldDelegate, AsyncReponseDe
                 print(error)
             }
 
-
-
-
-            //
+        //
             self.readStore()
             break
         case 3:
 
-            //
-
             // {"serviceIndex":0,"name":"Cafe00","location":{"address":"","latitude":0.0,"longitude":0.0},"index":0,"imagePath":""}
-
-
-
 
             self.fileWorker?.writeToFile(content: responseString, fileName: storeFileName, tag: 1)
 
