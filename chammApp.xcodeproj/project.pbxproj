@@ -22,10 +22,11 @@
 		061E4E5022C1146500307218 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061E4E4F22C1146500307218 /* DetailViewController.swift */; };
 		061E4E5322C1158000307218 /* NoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061E4E5222C1158000307218 /* NoteViewController.swift */; };
 		061E4E5622C115C000307218 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061E4E5522C115C000307218 /* MapViewController.swift */; };
-		061E4E5822C115D200307218 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061E4E5722C115D200307218 /* WebViewController.swift */; };
 		061E4E5B22C122C400307218 /* ServiceCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061E4E5A22C122C400307218 /* ServiceCategory.swift */; };
 		061E4E5D22C122FD00307218 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061E4E5C22C122FD00307218 /* Store.swift */; };
 		061E4E5F22C1241D00307218 /* ServiceCategoryContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061E4E5E22C1241D00307218 /* ServiceCategoryContext.swift */; };
+		06C70F5922C3D4CA00870B27 /* MapFlag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C70F5822C3D4CA00870B27 /* MapFlag.swift */; };
+		06C70F5B22C3DE3700870B27 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C70F5A22C3DE3700870B27 /* WebViewController.swift */; };
 		06E7E6F022C1ED5F00D27201 /* ServiceCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E7E6EF22C1ED5F00D27201 /* ServiceCellView.swift */; };
 		06E7E6F222C1ED8A00D27201 /* StoreCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E7E6F122C1ED8A00D27201 /* StoreCellView.swift */; };
 		2AF7A68FE898A5C7C21DCD32 /* Pods_chammAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C3C4C12FDB0C51D42FF7067 /* Pods_chammAppTests.framework */; };
@@ -72,10 +73,11 @@
 		061E4E4F22C1146500307218 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DetailViewController.swift; path = CellView/DetailViewController.swift; sourceTree = "<group>"; };
 		061E4E5222C1158000307218 /* NoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteViewController.swift; sourceTree = "<group>"; };
 		061E4E5522C115C000307218 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
-		061E4E5722C115D200307218 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		061E4E5A22C122C400307218 /* ServiceCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceCategory.swift; sourceTree = "<group>"; };
 		061E4E5C22C122FD00307218 /* Store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		061E4E5E22C1241D00307218 /* ServiceCategoryContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceCategoryContext.swift; sourceTree = "<group>"; };
+		06C70F5822C3D4CA00870B27 /* MapFlag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapFlag.swift; sourceTree = "<group>"; };
+		06C70F5A22C3DE3700870B27 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		06E7E6EF22C1ED5F00D27201 /* ServiceCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCellView.swift; sourceTree = "<group>"; };
 		06E7E6F122C1ED8A00D27201 /* StoreCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreCellView.swift; sourceTree = "<group>"; };
 		1B906F0E8D014CEFB0C9B45D /* Pods-chammAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chammAppUITests.release.xcconfig"; path = "Target Support Files/Pods-chammAppUITests/Pods-chammAppUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -225,9 +227,10 @@
 		061E4E5422C1158E00307218 /* MapFlow */ = {
 			isa = PBXGroup;
 			children = (
-				061E4E5E22C1241D00307218 /* ServiceCategoryContext.swift */,
 				061E4E5522C115C000307218 /* MapViewController.swift */,
-				061E4E5722C115D200307218 /* WebViewController.swift */,
+				061E4E5E22C1241D00307218 /* ServiceCategoryContext.swift */,
+				06C70F5822C3D4CA00870B27 /* MapFlag.swift */,
+				06C70F5A22C3DE3700870B27 /* WebViewController.swift */,
 			);
 			path = MapFlow;
 			sourceTree = "<group>";
@@ -496,6 +499,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06C70F5922C3D4CA00870B27 /* MapFlag.swift in Sources */,
 				061E4E5622C115C000307218 /* MapViewController.swift in Sources */,
 				06E7E6F022C1ED5F00D27201 /* ServiceCellView.swift in Sources */,
 				061E4E5022C1146500307218 /* DetailViewController.swift in Sources */,
@@ -507,7 +511,7 @@
 				061E4DDA22C0950E00307218 /* ViewController.swift in Sources */,
 				061E4E0B22C1042200307218 /* NetWorker.swift in Sources */,
 				061E4E5D22C122FD00307218 /* Store.swift in Sources */,
-				061E4E5822C115D200307218 /* WebViewController.swift in Sources */,
+				06C70F5B22C3DE3700870B27 /* WebViewController.swift in Sources */,
 				061E4DD822C0950E00307218 /* AppDelegate.swift in Sources */,
 				061E4E0922C1029900307218 /* SplashViewController.swift in Sources */,
 				061E4E5322C1158000307218 /* NoteViewController.swift in Sources */,
