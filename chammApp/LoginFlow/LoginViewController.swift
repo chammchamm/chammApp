@@ -27,9 +27,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate, AsyncReponseDe
         
         AppDelegate.RequestWorker.reponseDelegate = self
         
-       fileWorker = FileWorker()
-       fileWorker?.fileWorkerDelegate = self
-        
+        fileWorker = FileWorker()
+        fileWorker?.fileWorkerDelegate = self
         
         print("viewDidLoad")
         
@@ -45,8 +44,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate, AsyncReponseDe
         super.viewDidAppear(animated)
         
         print("viewDidAppear")
-        
-       txtAccount.becomeFirstResponder()
+      txtAccount.becomeFirstResponder()
     }
     
     
@@ -63,52 +61,49 @@ class LoginViewController: UIViewController, UITextFieldDelegate, AsyncReponseDe
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-    
+        print("Begin keyboard input")
         self.view.endEditing(true)
         
     }
     
     // MARK: - UITextFieldDelegate
-    
-   func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        
         // a
-
         let accept = "abcdeABCDE"
+        
         let cs = NSCharacterSet(charactersIn: accept).inverted
         // ['a', 'b', 'c']
 
         //                a  a
         let filtered = string.components(separatedBy: cs).joined(separator: "")
         //["a", "b", "c"]
-
-
+        
         if( string != filtered){
             return false
         }
-
-
+        
+        
         // Max Length
-
+        
         var maxLength : Int = 0
-
-
+        
+        
         if textField.tag == 1 {
             maxLength = 4
         }
-
+        
         if textField.tag == 2 {
             maxLength = 5
         }
-
-
+        
         let currentString : NSString = textField.text! as NSString
-
+        
         let newString : NSString = currentString.replacingCharacters(in: range, with: string) as NSString
-
+        
         return newString.length <= maxLength
-
-
+        
+        
     }
 
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -116,9 +111,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate, AsyncReponseDe
         if textField.tag == 1 {
 
             textField.resignFirstResponder()
-
             txtPassword.becomeFirstResponder()
-
         }
 
         if textField.tag == 2 {
@@ -140,7 +133,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate, AsyncReponseDe
         DispatchQueue.main.async {
             self.btnLogin.isEnabled = false
         }
-
     }
 
 
@@ -170,46 +162,54 @@ class LoginViewController: UIViewController, UITextFieldDelegate, AsyncReponseDe
             break
         case 2:
             // ServiceCategory
-
+            
             do{
-
+                
                 if let dataFromString = responseString.data(using: .utf8, allowLossyConversion: false) {
-
+                    
                     let json = try JSON(data: dataFromString)
-
+                    
                     let sqliteContext = ServiceCategoryContext()
                     sqliteContext.createdTable()
-
+                    
                     sqliteContext.clearAll()
-
-
+                    
+                    
                     for (_ ,subJson):(String, JSON) in json {
-
+                        
                         let serviceId : Int = subJson["index"].intValue
                         let name : String = subJson["name"].stringValue
                         let imagePath : String = subJson["imagePath"].stringValue
-
+                        
                         sqliteContext.insertData( _serviceId: serviceId, _name: name, _imagepath: imagePath)
-
+                        
                     }
-
+                    
                     let categories = sqliteContext.readData()
                     print(categories)
                 }
-
+                
             }catch{
                 print(error)
             }
-
-        //
+            
+            
+            
+            
+            //
             self.readStore()
             break
         case 3:
-
+            
+            //
+            
             // {"serviceIndex":0,"name":"Cafe00","location":{"address":"","latitude":0.0,"longitude":0.0},"index":0,"imagePath":""}
-
+            
+            
+            
+            
             self.fileWorker?.writeToFile(content: responseString, fileName: storeFileName, tag: 1)
-
+            
             break
         default:
             break

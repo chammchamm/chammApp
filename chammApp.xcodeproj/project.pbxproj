@@ -26,6 +26,8 @@
 		061E4E5B22C122C400307218 /* ServiceCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061E4E5A22C122C400307218 /* ServiceCategory.swift */; };
 		061E4E5D22C122FD00307218 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061E4E5C22C122FD00307218 /* Store.swift */; };
 		061E4E5F22C1241D00307218 /* ServiceCategoryContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061E4E5E22C1241D00307218 /* ServiceCategoryContext.swift */; };
+		06E7E6F022C1ED5F00D27201 /* ServiceCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E7E6EF22C1ED5F00D27201 /* ServiceCellView.swift */; };
+		06E7E6F222C1ED8A00D27201 /* StoreCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E7E6F122C1ED8A00D27201 /* StoreCellView.swift */; };
 		2AF7A68FE898A5C7C21DCD32 /* Pods_chammAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C3C4C12FDB0C51D42FF7067 /* Pods_chammAppTests.framework */; };
 		77BB5E6A36B20E28C50BD654 /* Pods_chammAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65AF7FBA4C9B2C2B62924740 /* Pods_chammAppUITests.framework */; };
 		D646959F133EAE3E875CA744 /* Pods_chammApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC9E3E7E10F06580C1552A2 /* Pods_chammApp.framework */; };
@@ -66,14 +68,16 @@
 		061E4E0A22C1042200307218 /* NetWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetWorker.swift; sourceTree = "<group>"; };
 		061E4E0D22C105B800307218 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		061E4E0F22C1073900307218 /* FileWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileWorker.swift; sourceTree = "<group>"; };
-		061E4E4D22C1138500307218 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
-		061E4E4F22C1146500307218 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		061E4E4D22C1138500307218 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MasterViewController.swift; path = CellView/MasterViewController.swift; sourceTree = "<group>"; };
+		061E4E4F22C1146500307218 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DetailViewController.swift; path = CellView/DetailViewController.swift; sourceTree = "<group>"; };
 		061E4E5222C1158000307218 /* NoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteViewController.swift; sourceTree = "<group>"; };
 		061E4E5522C115C000307218 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		061E4E5722C115D200307218 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		061E4E5A22C122C400307218 /* ServiceCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceCategory.swift; sourceTree = "<group>"; };
 		061E4E5C22C122FD00307218 /* Store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		061E4E5E22C1241D00307218 /* ServiceCategoryContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceCategoryContext.swift; sourceTree = "<group>"; };
+		06E7E6EF22C1ED5F00D27201 /* ServiceCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCellView.swift; sourceTree = "<group>"; };
+		06E7E6F122C1ED8A00D27201 /* StoreCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreCellView.swift; sourceTree = "<group>"; };
 		1B906F0E8D014CEFB0C9B45D /* Pods-chammAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chammAppUITests.release.xcconfig"; path = "Target Support Files/Pods-chammAppUITests/Pods-chammAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		34AFDCD4483E499D3FD65E68 /* Pods-chammAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chammAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-chammAppUITests/Pods-chammAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		3CC9E3E7E10F06580C1552A2 /* Pods_chammApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_chammApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -117,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				061E4DD622C0950E00307218 /* chammApp */,
+				061E4E0C22C1057900307218 /* LoginFlow */,
 				061E4DEB22C0950F00307218 /* chammAppTests */,
 				061E4DF622C0950F00307218 /* chammAppUITests */,
 				061E4DD522C0950E00307218 /* Products */,
@@ -139,11 +144,10 @@
 			isa = PBXGroup;
 			children = (
 				061E4E5922C1229900307218 /* Model */,
+				061E4E0522C0A07900307218 /* Worker */,
+				061E4E4B22C1134700307218 /* MasterDetail */,
 				061E4E5422C1158E00307218 /* MapFlow */,
 				061E4E5122C1156000307218 /* NoteFlow */,
-				061E4E4B22C1134700307218 /* MasterDetail */,
-				061E4E0C22C1057900307218 /* LoginFlow */,
-				061E4E0522C0A07900307218 /* Worker */,
 				061E4DD722C0950E00307218 /* AppDelegate.swift */,
 				061E4DD922C0950E00307218 /* ViewController.swift */,
 				061E4DDB22C0950E00307218 /* Main.storyboard */,
@@ -187,13 +191,16 @@
 			children = (
 				061E4E0D22C105B800307218 /* LoginViewController.swift */,
 			);
-			path = LoginFlow;
+			name = LoginFlow;
+			path = chammApp/LoginFlow;
 			sourceTree = "<group>";
 		};
 		061E4E4B22C1134700307218 /* MasterDetail */ = {
 			isa = PBXGroup;
 			children = (
 				061E4E4C22C1135E00307218 /* CellView */,
+				061E4E4D22C1138500307218 /* MasterViewController.swift */,
+				061E4E4F22C1146500307218 /* DetailViewController.swift */,
 			);
 			path = MasterDetail;
 			sourceTree = "<group>";
@@ -201,8 +208,8 @@
 		061E4E4C22C1135E00307218 /* CellView */ = {
 			isa = PBXGroup;
 			children = (
-				061E4E4D22C1138500307218 /* MasterViewController.swift */,
-				061E4E4F22C1146500307218 /* DetailViewController.swift */,
+				06E7E6EF22C1ED5F00D27201 /* ServiceCellView.swift */,
+				06E7E6F122C1ED8A00D27201 /* StoreCellView.swift */,
 			);
 			path = CellView;
 			sourceTree = "<group>";
@@ -463,6 +470,8 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-chammApp/Pods-chammApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SQLite.swift/SQLite.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
@@ -470,6 +479,8 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SQLite.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
@@ -486,10 +497,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				061E4E5622C115C000307218 /* MapViewController.swift in Sources */,
+				06E7E6F022C1ED5F00D27201 /* ServiceCellView.swift in Sources */,
 				061E4E5022C1146500307218 /* DetailViewController.swift in Sources */,
 				061E4E4E22C1138500307218 /* MasterViewController.swift in Sources */,
 				061E4E5B22C122C400307218 /* ServiceCategory.swift in Sources */,
 				061E4E0E22C105B800307218 /* LoginViewController.swift in Sources */,
+				06E7E6F222C1ED8A00D27201 /* StoreCellView.swift in Sources */,
 				061E4E5F22C1241D00307218 /* ServiceCategoryContext.swift in Sources */,
 				061E4DDA22C0950E00307218 /* ViewController.swift in Sources */,
 				061E4E0B22C1042200307218 /* NetWorker.swift in Sources */,
@@ -681,6 +694,22 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-l\"sqlite3\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"SDWebImage\"",
+					"-framework",
+					"\"SQLite\"",
+					"-framework",
+					"\"SwiftyJSON\"",
+					"-framework",
+					"\"AlamoFire\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = tw.edu.cjcu.chammApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -699,6 +728,22 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-l\"sqlite3\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"SDWebImage\"",
+					"-framework",
+					"\"SQLite\"",
+					"-framework",
+					"\"SwiftyJSON\"",
+					"-framework",
+					"\"AlamoFire\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = tw.edu.cjcu.chammApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
